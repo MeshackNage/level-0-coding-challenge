@@ -1,10 +1,11 @@
 def find_vowels(string):
-    i = ""
-    vowels = "a", "e", "i", "o", "u"
+    i = []
+    vowels = "aeiou"
     for x in string:
         if x in vowels:
-            i += x
+            if x not in i:
+                i.append(x)
     return i
 
 
-print(find_vowels('Umuzi'))
+print(find_vowels(str.lower('Umuzi BOOT CAmp ')))
