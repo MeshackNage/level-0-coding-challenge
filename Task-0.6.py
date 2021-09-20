@@ -1,6 +1,9 @@
-def maximum(*numbers):
-    highest = sorted(numbers, reverse=True)
-    return highest[0]
+def maximum_num(*numbers):
+    highest = 0
+    for n in numbers:
+        if n > highest:
+            highest = n
+    return highest
 
 
-print(maximum(1, 22, 3, 2))
+print(maximum_num(1, 22, 3, 2, 88))
