@@ -1,9 +1,9 @@
 def maximum_num(*numbers):
-    highest = 0
+    highest = numbers[0]
     for n in numbers:
         if n > highest:
             highest = n
     return highest
 
 
-print(maximum_num(1, 22, 3, 2, 88))
+print(maximum_num(-22, -3, -88, -7))

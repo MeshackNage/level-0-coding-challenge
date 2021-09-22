@@ -6,7 +6,7 @@ def find_vowels(string):
         if x in vowels:
             if x not in i:
                 i.append(x)
-    print("Vowels:", *i)
+    print("Vowels:", ', '.join(i))
     return x
 
 
