@@ -1,11 +1,12 @@
 def common_characters(string_1, string_2):
     common = []
     i = ""
-    for x in string_1 or string_2:
-        if x in string_1:
-            common.append(x.lower())
+    for x in string_1.lower():
+        if x in string_2.lower():
+            if x not in common:
+                common.append(x)
     print("Common characters:", ', '.join(common))
     return i
 
 
-print(common_characters("Ear", "Dear"))
+common_characters("Eckard", "Berry")
