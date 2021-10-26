@@ -1,4 +1,4 @@
-def even_or_odd(number):
+def even_or_odd_number(number):
     if number % 2 == 0:
         print("Even")
     else:
@@ -6,4 +6,4 @@ def even_or_odd(number):
     return number
 
 
-even_or_odd(11)
+even_or_odd_number(11)
