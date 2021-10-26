@@ -1,4 +1,4 @@
-def maximum_num(*numbers):
+def find_highest_number(*numbers):
     highest = numbers[0]
     for n in numbers:
         if n > highest:
@@ -6,4 +6,4 @@ def maximum_num(*numbers):
     return highest
 
 
-print(maximum_num(-22, -3, -88, -7))
+print(find_highest_number(-22, -3, -88, -7))
