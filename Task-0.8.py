@@ -1,4 +1,4 @@
-def number_to_time(number):
+def convert_number_to_time(number):
     hour = number // 60
     minute = number % 60
     m = "minute"
@@ -10,5 +10,5 @@ def number_to_time(number):
     print(f'{hour} {h}  {minute} {m}')
 
 
-number_to_time(71)
+convert_number_to_time(71)
 
