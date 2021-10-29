@@ -1,13 +1,11 @@
 def find_vowels(string):
-    i = []
-    x = ''
-    vowels = "aeiou"
-    for x in string:
-        if x in vowels:
-            if x not in i:
-                i.append(x)
-    print("Vowels:", ', '.join(i))
-    return x
+    found_vowels = []
+
+    for vowel in string.lower():
+        if vowel in 'aeiou':
+            if vowel not in found_vowels:
+                found_vowels.append(vowel)
+    print("Vowels:", ', '.join(found_vowels))
 
 
-print(find_vowels(str.lower('Umuzi BOOT CAmp ')))
+find_vowels('Umuzi BOOT CAmp ')
