@@ -1,8 +1,8 @@
 def find_highest_number(*numbers):
     highest = numbers[0]
-    for n in numbers:
-        if n > highest:
-            highest = n
+    for number in numbers:
+        if number > highest:
+            highest = number
     return highest
 
 
