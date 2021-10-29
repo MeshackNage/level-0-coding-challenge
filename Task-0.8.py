@@ -1,13 +1,13 @@
 def convert_number_to_time(number):
     hour = number // 60
     minute = number % 60
-    m = "minute"
-    h = "hour"
+    minute_ = "minute"
+    hour_ = "hour"
     if hour > 1:
-        h += "s"
+        hour_ += "s"
     if minute > 1:
-        m += "s"
-    print(f'{hour} {h}  {minute} {m}')
+        minute_ += "s"
+    print(f'{hour} {hour_}  {minute} {minute_}')
 
 
 convert_number_to_time(71)
